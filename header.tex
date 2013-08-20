@@ -30,12 +30,18 @@
 bottom=25mm,top=25mm,bindingoffset=5mm,%
 includehead,includefoot
 }
+% allow landscape pages
+\usepackage{pdflscape}
 
+%use longtables
+\usepackage{longtable}
+
+\usepackage{amssymb}
 \usepackage{varioref}
 \usepackage{url}
 
 %	Paket zum Übersetzen
-\usepackage[ngerman]{babel}
+%\usepackage[ngerman]{babel}
 
 % 	no need for umlauts (ISO_8859-1 chars)
 %\usepackage[latin1]{inputenc}
@@ -88,9 +94,9 @@ includehead,includefoot
 
 \usepackage[intoc]{nomencl}
 % Befehl umbenennen in abk
-\let\abk\nomenclature
+%\let\abk\nomenclature
 % Deutsche Überschrift
-\renewcommand{\nomname}{Abkürzungsverzeichnis}
+%\renewcommand{\nomname}{Abkürzungsverzeichnis}
 % Punkte zw. Abkürzung und Erklärung
 \setlength{\nomlabelwidth}{.20\hsize}
 \renewcommand{\nomlabel}[1]{#1 \dotfill}
@@ -104,8 +110,8 @@ includehead,includefoot
 %----------Neue Kommandos----------
 %----------------------------------
 
-\newcommand{\myabb}[1]{Abbildung~\ref{#1}}
-\newcommand{\mytab}[1]{Tabelle~\vref{#1}}
+\newcommand{\myabb}[1]{Figure~\ref{#1}}
+\newcommand{\mytab}[1]{Table~\vref{#1}}
 
 %----------------------------------
 %----------------------------------
