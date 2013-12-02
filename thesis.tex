@@ -1,5 +1,5 @@
 
-\include{header}
+\include{preamble/preamble}
 \title{%
 \large Master Thesis\\
 \\[20mm]
@@ -16,13 +16,51 @@ Second Examiner: Guettler / Denzer\\
 Adivisors: Thorsten Hell\\[20mm]
 }
 
-
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 \begin{document}
 
 %\maketitle
+
+\begin{titlepage}
+\begin{center}
+
+% Upper part of the page. The '~' is needed because \\
+% only works if a paragraph has started.
+\includegraphics[width=0.5\textwidth]{img/logo}~\\[1cm]
+
+\textsc{\LARGE Master Thesis}\\[1.5cm]
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries Master Thesis Thema \\[0.4cm] }
+
+\HRule \\[1.5cm]
+
+\textsc{\Large Daniel Meiers}\\[0.2cm]
+\textsc{\Large Matriculation No.: 3538990}\\[0.2cm]
+\textsc{\Large daniel.meiers@cismet.de}\\[4cm]
+
+% Author and supervisor
+\begin{tabular}[0.8\textwidth]{l l}
+\emph{First Examiner:} & Prof. Dr. Ralf \textsc{Denzer} \\
+\emph{Second Examiner:} & Prof. Dr. Reiner \textsc{Güttler} \\
+\emph{Advisors:} & Martin \textsc{Scholl}, Dipl. Inf. (FH) \\
+ 				& Sascha \textsc{Schlobinski}, M.Sc.
+\end{tabular}
+
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+
+\end{center}
+\end{titlepage}  
  
-%\tableofcontents
+ 
+ 
+\tableofcontents
 
 
 % insert provisional TOC here TODO: remove this and insert it in the respective chaptersls
@@ -54,6 +92,6 @@ Adivisors: Thorsten Hell\\[20mm]
 
 
 %\listoffigures
-%\printbibliography
+\printbibliography
 
 \end{document}
