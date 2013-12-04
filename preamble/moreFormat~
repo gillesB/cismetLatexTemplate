@@ -7,7 +7,7 @@
 \onehalfspacing
 
 % page settings
-\usepackage{geometry}
+\usepackage[showframe]{geometry}
 \geometry{a4paper,left=35mm,right=25mm,%
 bottom=25mm,top=25mm,bindingoffset=5mm,%
 includehead,includefoot
@@ -18,3 +18,9 @@ includehead,includefoot
 %Fußnoten durchlaufend nummerieren
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
+
+\pagestyle{headings}
+% Eigene Kopfzeile
+%\usepackage{scrpage2}
+%\pagestyle{scrheadings}
+%\automark[section]{chapter}
