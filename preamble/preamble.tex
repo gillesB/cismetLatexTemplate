@@ -7,7 +7,7 @@
 % prints warnings about obsolete syntax and syntax which will probably break
 \RequirePackage[l2tabu, orthodox]{nag}
 
-\documentclass[12pt, pdftex, a4paper, bibliography=totoc, listof=totoc, parskip=half]{scrreprt}
+\documentclass[12pt, pdftex, a4paper, bibliography=totoc, listof=totoc, parskip=half, abstract=on]{scrreprt}
 
 % use T1 Fonts
 % The Latin Modern fonts are enhanced versions of the Computer Modern fonts. They have enhanced metrics and glyph coverage.
@@ -59,27 +59,16 @@
 
 \input{preamble/moreListings}
 
-%-----------Abkürzungsverzeichnis---------------
-
-\usepackage[intoc]{nomencl}
-% Befehl umbenennen in abk
-%\let\abk\nomenclature
-% Deutsche Überschrift
-%\renewcommand{\nomname}{Abkürzungsverzeichnis}
-% Punkte zw. Abkürzung und Erklärung
-\setlength{\nomlabelwidth}{.20\hsize}
-\renewcommand{\nomlabel}[1]{#1 \dotfill}
-% Zeilenabstände verkleinern
-\setlength{\nomitemsep}{-\parsep}
-\makenomenclature
-
 %-----------------------------------------------
 
 \input{preamble/newCommands}
 
+\input{preamble/moreAbbreviations}
+
 % hyperref should be one of the last imported packages
 % although there are exceptions: http://tex.stackexchange.com/questions/1863/which-packages-should-be-loaded-after-hyperref-instead-of-before
 \input{preamble/moreHyperref}
+
 
 %----------------------------------
 %----------------------------------
