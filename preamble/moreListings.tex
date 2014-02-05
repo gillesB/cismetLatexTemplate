@@ -1,5 +1,11 @@
+\usepackage{color}
+\usepackage{xcolor}
 \usepackage{listings}
+\usepackage{caption}
 
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
 
 %----------------------------------
 %----------JavaScript--------------
@@ -20,22 +26,30 @@
 }
 
 \lstset{
-   language=JavaScript,
-   backgroundcolor=\color{white},
-   extendedchars=true,
-   basicstyle=\footnotesize\ttfamily,
-   showstringspaces=false,
-   showspaces=false,
-   numbers=left,
-   numberstyle=\footnotesize,
-   numbersep=9pt,
-   tabsize=2,
-   breaklines=true,
-   showtabs=false,
-   captionpos=b,
-   frame=single, % adds a frame around the code
-   %framexleftmargin=1.5em,
-   rulesepcolor=\color{black},
-   rulecolor=\color{darkgray},
-   frameround=tttt
-}
+	    language=JavaScript,
+         basicstyle=\footnotesize\ttfamily, % Standardschrift
+         numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         %stepnumber=2,               % Abstand zwischen den Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=2,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         keywordstyle=\color{red},
+    		frame=b,         
+ %        keywordstyle=[1]\textbf,    % Stil der Keywords
+ %        keywordstyle=[2]\textbf,    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         stringstyle=\color{white}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+ }
+
+
